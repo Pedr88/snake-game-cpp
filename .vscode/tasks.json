@@ -1,0 +1,76 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build debug",
+            "type": "process",
+            "command": "C:/raylib/w64devkit/bin/mingw32-make.exe",
+            "args": [
+                "RAYLIB_PATH=C:/raylib/raylib",
+                "PROJECT_NAME=${fileBasenameNoExtension}",
+                "OBJS=*.cpp",
+                "BUILD_MODE=DEBUG"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compiles the project in debug mode using mingw32-make"
+        },
+        {
+            "label": "build release",
+            "type": "process",
+            "command": "C:/raylib/w64devkit/bin/mingw32-make.exe",
+            "args": [
+                "RAYLIB_PATH=C:/raylib/raylib",
+                "PROJECT_NAME=${fileBasenameNoExtension}",
+                "OBJS=*.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compiles the project in release mode using mingw32-make"
+        },
+        {
+            "label": "build project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "*.cpp",
+                "-o",
+                "main.exe",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compiles all .cpp files in the project directory into main.exe"
+        },
+        {
+            "label": "run project",
+            "type": "shell",
+            "command": "./main.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Runs the compiled executable"
+        }
+    ]
+}

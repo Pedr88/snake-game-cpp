@@ -1,0 +1,36 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Raylib specific
+raylib/src/*.o
+raylib/src/*.exe
+raylib/src/*.dll
+raylib/src/*.lib
+raylib/src/*.so
+raylib/src/*.dylib
+
+# Other
+*.log
