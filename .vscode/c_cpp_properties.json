@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/raylib/raylib/src/**",
+                "C:\\Raylib\\raylib-5.5_win64_mingw-w64\\include",
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include"
             ],

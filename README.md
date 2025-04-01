@@ -11,6 +11,20 @@ O jogo da cobrinha é um clássico onde o jogador controla uma cobra que deve co
 - Linguagem: C++
 - Biblioteca Gráfica: Raylib
 
+## Como Compilar e Executar
+
+Para compilar o programa, use o seguinte comando no terminal:
+
+```sh
+g++ -std=c++14 -Wall -I"caminho/para/o/diretorio/include/do/raylib" -L"caminho/para/o/diretorio/lib/do/raylib" -o main src/main.cpp -lraylib -lopengl32 -lgdi32 -lwinmm
+```
+
+Após a compilação, execute o programa com o comando:
+
+```sh
+./main
+```
+
 ## Como Jogar
 
 - Use as setas do teclado para mover a cobra.
