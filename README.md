@@ -25,6 +25,11 @@ Após a compilação, execute o programa com o comando:
 ./main
 ```
 
+Ou atualize o arquivo makefile e use o comando:
+```sh
+make
+```
+
 ## Como Jogar
 
 - Use as setas do teclado para mover a cobra.
