@@ -1,43 +1,42 @@
-# 🐍 Snake Game em C++ com Raylib
+### 🐍 Snake Game in C++ with Raylib
 
-Projeto de jogo da cobrinha desenvolvido em C++ utilizando a biblioteca Raylib.
+This is a snake game project developed in C++ using the Raylib library.
 
-## 🚀 Como Usar
+#### 🚀 How to Use
 
-### Instalação
+##### Installation
 
 ```bash
 git clone https://github.com/Pedr88/snake-game-cpp
 cd snake-game-cpp
 ```
 
-### Compilação e Execução
+##### Compilation and Execution
 
 ```bash
-# Compilar o código
-g++ -std=c++14 -Wall -I"caminho/para/o/diretorio/include/do/raylib" -L"caminho/para/o/diretorio/lib/do/raylib" -o main src/main.cpp -lraylib -lopengl32 -lgdi32 -lwinmm
+# Compile the code
+g++ -std=c++14 -Wall -I"path/to/raylib/include" -L"path/to/raylib/lib" -o main src/main.cpp -lraylib -lopengl32 -lgdi32 -lwinmm
 
-# Executar o jogo
+# Run the game
 ./main
 
-# Ou utilizando o Makefile
+# Or using the Makefile
 make
 ```
 
-## 🎮 Como Jogar
+#### 🎮 How to Play
 
-- Use as **setas do teclado** para mover a cobra.
-- Coma a **comida** para ganhar pontos e aumentar de tamanho.
-- Evite **colidir** com as bordas da tela ou com o próprio corpo da cobra.
+- Use the **arrow keys** to move the snake.
+- Eat the **food** to gain points and grow in size.
+- Avoid **colliding** with the screen edges or the snake's own body.
 
-## 📦 Tecnologias Utilizadas
+#### 📦 Technologies Used
 
-- **Linguagem**: C++
-- **Biblioteca Gráfica**: Raylib
+- **Language**: C++
+- **Graphics Library**: Raylib
 
-## 📺 Guia Seguido
+#### 📺 Guide Followed
 
-Este projeto foi desenvolvido seguindo um guia no YouTube. Assista ao tutorial completo no link abaixo:
+This project was developed following a guide on YouTube. Watch the full tutorial at the link below:
 
-[Guia no YouTube](https://www.youtube.com/watch?v=LGqsnM_WEK4)
-
+[YouTube Guide](https://www.youtube.com/watch?v=LGqsnM_WEK4)
